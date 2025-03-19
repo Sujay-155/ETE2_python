@@ -430,7 +430,7 @@ if st.session_state.total_emissions > 0:
 @st.cache_data
 def load_emissions_data():
     try:
-        csv_path = "d:/Christ/resume_builder-main/resume_builder-main/pdfs/Carbon_(CO2)_Emissions_by_Country.csv"
+        csv_path = "Carbon_(CO2)_Emissions_by_Country.csv"
         df = pd.read_csv(csv_path)
         # Convert date to datetime and extract year
         df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
